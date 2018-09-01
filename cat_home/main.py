@@ -22,9 +22,9 @@ intro_text = "Meow! I'm"
 name_height = 60
 status_height = 20
 info_height = 30
-logo_path = "shared/logo.png"
-logo_height = 150
-logo_width = 56
+logo_path = "cat_home/cat.png"
+logo_height = 250
+logo_width = 250
 
 # Maximum length of name before downscaling
 max_name = 8
