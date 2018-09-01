@@ -87,5 +87,5 @@ while True:
         text += "Battery: %s%%" % int(value_battery)
     if prev_text != text:
         status.text(text)
-
+        prev_text = text
     sleep_or_exit(0.5)
