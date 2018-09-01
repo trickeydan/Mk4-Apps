@@ -6,7 +6,7 @@ This is a homescreen. However, the cats got at it.
 ___name___         = "Cat Homescreen"
 ___license___      = "MIT"
 ___categories___   = ["Homescreens"]
-___dependencies___ = ["homescreen", "shared/logo.png", "shared/sponsors.png"]
+___dependencies___ = ["homescreen", "cat_home/cat.png"]
 
 import ugfx
 from homescreen import *
