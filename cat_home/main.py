@@ -76,6 +76,7 @@ ugfx.set_default_font(ugfx.FONT_SMALL)
 status = ugfx.Label(0, ugfx.height() - info_height * 2 - status_height, ugfx.width(), status_height, "", justification=ugfx.Label.CENTER)
 
 # update loop
+prev_text=""
 while True:
     text = "";
     value_wifi_strength = wifi_strength()
@@ -84,5 +85,7 @@ while True:
         text += "Wi-Fi: %s%%, " % int(value_wifi_strength)
     if value_battery:
         text += "Battery: %s%%" % int(value_battery)
-    status.text(text)
+    if prev_text != text:
+        status.text(text)
+
     sleep_or_exit(0.5)
